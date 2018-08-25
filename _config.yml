@@ -10,8 +10,8 @@ title: FCS Knowledge
 # email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   FCS Team Knowledge.
-baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://jimhough.com" # the base hostname & protocol for your site
+baseurl: "/inform" # the subpath of your site, e.g. /blog
+url: "https://jhough.github.io/" # the base hostname & protocol for your site
 #twitter_username: jimhough
 #github_username:  jhough
 timezone: America/New_York

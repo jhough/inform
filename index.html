@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div class="home">
+
+
+<p>FCS Team Knowledge.</p>
+
+<section>
+    <h2>About Me</h2>
+    <p>I currently live in Northern Virginia. I work for a company that supports the US Department of Defense by providing web-based tracking of RFID tagged shipping containers from shipping centers in the US to bases around the world. Somewhat like how FedEx tracks their packages.</p>
+    <p>I enjoy photography, volleyball, and hiking. You can often find my wife and I cycling the W&amp;OD trail. I’m always reading. My last name is pronounced "how".</p>
+</section>
+
+<section>
+    <h2>Connect</h2>
+    <p>My <a href="http://twitter.com/jimhough" rel="nofollow">Twitter account</a> is mostly stuff about software development.</p>
+    <p>My <a href="http://www.linkedin.com/in/houghjim" rel="nofollow">LinkedIn profile</a> has my professional history.</p>
+    <p>My <a href="https://github.com/jhough" rel="nofollow">GitHub repository</a> has some projects.</p>
+</section>
+
+<section>
+    <h2>Fun</h2>
+
+    <p>My <a href="/questions/">Icebreaker Questions page</a> continues to get several hundred unique visitors a day.</p>
+</section>
+
+<section>
+    <h2>Writing</h2>
+<!--
+  <ul class="post-list">
+-->
+
+<ul>
+    {% for post in site.posts limit:3 %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          {{ post.excerpt }}
+
+      </li>
+    {% endfor %}
+  </ul>
+
+    <p><a href="/writing/">Full archive</a>
+</section>
+
+
+</div>
